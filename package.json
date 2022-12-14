@@ -1,0 +1,21 @@
+{
+  "name": "calculadora-cuentaregresiva",
+  "version": "1.0.0",
+  "description": "Inicio un nuevo repositorio con el fin de presentar las dos aplicaciones requeridas en una sola pagina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"json-server --watch src/api.json --port:3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres0818/calculadora-cuentaRegresiva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andres0818/calculadora-cuentaRegresiva/issues"
+  },
+  "homepage": "https://github.com/andres0818/calculadora-cuentaRegresiva#readme"
+}
