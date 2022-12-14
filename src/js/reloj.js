@@ -1,3 +1,5 @@
+export const reloj=()=>{
+
 document.addEventListener("DOMContentLoaded", () => {
   //===
   // VARIABLES
@@ -50,3 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Refresh every second
   setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 });
+}

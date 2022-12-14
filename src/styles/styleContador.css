@@ -1,0 +1,45 @@
+#hours, #minutes,#seconds,#days{
+    background-image:linear-gradient(red,green,blue,purple,yellow) ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 1px purple;
+
+}
+
+#puntos{
+    transform: rotate(25deg) translateY(-300px)translatex(280px); 
+    
+}
+
+.contador-descuento{
+    width: 120%;
+    height:110vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(12, 2, 33);
+    font-size: 50px;
+    transform: translateY(378.5px)translateX(-160px); 
+    
+}
+
+.contador-descuento::after{
+    content: "Cuenta Regresiva";
+    text-align: 0 50px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(12, 2, 33);
+    display: flex;
+    font-size: 60px;
+    z-index: 2;
+    transform:  translateX(-150px) rotate(25deg);
+    transition: 0.3s  linear;
+    width: 500px;
+    height: 500px;
+}
+.contador-descuento:hover::after{
+    z-index: -1;
+    filter: blur(100px);
+}

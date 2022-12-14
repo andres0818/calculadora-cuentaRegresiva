@@ -1,0 +1,13 @@
+body{
+    overflow: hidden;
+    margin-right:100px;
+}
+
+.contador-calculadora{
+    width: 100%;
+    height:50%;
+    transform: rotate(-25.75deg); 
+    display: flex;
+    flex-direction: column;
+    
+}

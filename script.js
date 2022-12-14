@@ -3,7 +3,9 @@ import { themeWhite } from "./src/js/themeCalculator.js";
 import { themePurple } from "./src/js/themeCalculator.js";
 import { operaciones } from "./src/js/operations.js";
 import { mostrarHistorial } from "./src/js/urlApi.js";
+import { reloj } from "./src/js/reloj.js";
 
+reloj()
 
 mostrarHistorial()
 operaciones()

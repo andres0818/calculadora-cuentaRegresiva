@@ -1,7 +1,10 @@
 body {
   background-color: rgba(137, 43, 226, 0.726);
+  margin: 0;
+  padding: 0;
 }
 .container {
+  height: 50%;
   color: white;
   margin: 0 40% 0 30%;
   border-radius: 20px;
@@ -12,7 +15,30 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transform: rotate(25.75deg) translateX(-250px) translateY(-50px); 
+  position: relative;
+  z-index:-2;  
 }
+
+.container::after{
+  content: "Calculadora";
+  color: transparent;
+  font-size: 60px;
+  text-shadow: 1200px 1150px white;
+  display: flex;
+  position: absolute;
+  width: 2500px;
+  height: 2500px;
+  position: absolute;
+  background-color: rgb(174, 111, 232);
+  transition:0.2s linear ;
+}
+.container:hover::after{
+  z-index: -1;
+  filter: blur(100px);
+  background-color: transparent;
+}
+
 .theme {
   background-color: rgba(0, 0, 0, 0.127);
   border-radius: 8px;
