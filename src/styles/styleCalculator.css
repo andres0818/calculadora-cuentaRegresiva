@@ -104,9 +104,16 @@ button:hover {
   background-color: rgba(186, 184, 188, 0.341);
 }
 
-@media(max-width:844px) {
-    .container{
-        margin-left: 16%;
-        margin-right: 16%;
-    }
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px){
+  body{
+    rotate: 25deg;
+  }
+  .container{
+    width: 95%;
+    margin: 5px 0px 5px -35px;
+    transform:rotate(0deg) translateX(50px);
+  }
+  .container::after{
+        text-shadow: 1100px 1150px white;    
+  }
 }

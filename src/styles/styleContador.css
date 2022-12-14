@@ -152,3 +152,48 @@
     z-index: -1;
     filter: blur(100px);
 }
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px){
+    .contador-descuento{
+        width: 100%;
+        height:400px;       
+        transform: rotate(0.5deg); 
+        margin-top: 400px;        
+        margin-left: -2px;
+    }
+    #puntos{
+        transform: rotate(0) translateY(-50px)translatex(120px);
+        display: flex; 
+        
+    }
+    .contador-descuento::before{
+        content: "/";
+        color: transparent;
+        position: absolute;
+        rotate: 0deg;
+        margin-top: 350px;
+        background-image: url(../img/pattern-hills.svg);
+        width: 900px;
+        z-index: 3;
+    }
+    .contador-descuento::after{
+        content: "Cuenta Regresiva";
+        text-align: 0 50px;
+        color: white;
+        border-radius: 50px;
+        background-color: rgb(12, 2, 33);
+        display: flex;
+        font-size: 60px;
+        z-index: 2;
+        transform:  translateX(50px) rotate(0deg);
+        transition: 0.3s  linear;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+    }
+    .contador-descuento:hover::after{
+        z-index: -1;
+        filter: blur(100px);
+        position: relative;
+    }
+  }
