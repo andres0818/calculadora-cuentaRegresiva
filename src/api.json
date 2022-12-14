@@ -1,4 +1,11 @@
 {
   "fechas": [],
-  "historial": []
+  "historial": [
+    {
+      "id": 10
+    },
+    {
+      "id": 12
+    }
+  ]
 }
