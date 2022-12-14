@@ -3,7 +3,7 @@ body {
 }
 .container {
   color: white;
-  margin: 0 40% 0 40%;
+  margin: 0 40% 0 30%;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.423);
   margin-top: 10vh;
@@ -19,6 +19,24 @@ body {
   display: flex;
   margin: 8px 0 -25px 70%;
 }
+
+.inputs{
+  display: flex;
+  gap: 30px;  
+}
+#historial{
+  width: 150px;
+  height: 250px;
+  background-color: rgba(61, 42, 79, 0.318);
+  border-radius: 10px;
+  text-align: center;
+}
+.delete{
+  margin-left: 10px;
+  height: 30px;
+  width: 80px;
+  background-color: rgb(197, 59, 59);
+}
 .radio {
   margin: 3px;
   appearance: none;
@@ -33,6 +51,7 @@ body {
 }
 
 .resutl {
+  
   padding-right: 20px;
   text-align: end;
   height: 50px;
@@ -41,6 +60,7 @@ body {
 }
 
 .numeros {
+  
   display: flex;
   flex-direction: row;
   gap: 10px;

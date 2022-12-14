@@ -11,7 +11,7 @@ const handleError = (error) => {
 	console.log(error);
 }
 //Mostrar datos
-const httpGET = async (path) => {
+/* const httpGET = async (path) => {
 	try {
 
 		console.log("haciendo una nueva petición GET");
@@ -25,7 +25,7 @@ const httpGET = async (path) => {
 	} catch (error) {
 		handleError(error);
 	}
-}
+} */
 //enviar datos {nuevo dato}
 const httpPOST = async (path, newData) => {
 	try {
@@ -78,13 +78,13 @@ const httpDELETE = async (path, id) => {
 
 
 
- const getCalculadora = async () => await httpGET(API_PATHS.calculadora)
- const getCalContador = async () => await httpGET(API_PATHS.contador)
+/*  export const getCalculadora = async () => await httpGET(API_PATHS.calculadora)
+ export const getCalContador = async () => await httpGET(API_PATHS.contador) */
 
- const createDataCalculadora = async (newDato) => await httpPOST(API_PATHS.calculadora, newDato)
- const createDataContador = async (newDato) => await httpPOST(API_PATHS.contador, newDato)
+ export const createDataCalculadora = async (newDato) => await httpPOST(API_PATHS.calculadora, newDato)
+ export const createDataContador = async (newDato) => await httpPOST(API_PATHS.contador, newDato)
 
- const eraseCalculadora = async (id) => await httpDELETE(API_PATHS.calculadora, id)
- const eraseContador = async (id) => await httpDELETE(API_PATHS.contador, id)
+ export const eraseCalculadora = async (id) => await httpDELETE(API_PATHS.calculadora, id)
+ export const eraseContador = async (id) => await httpDELETE(API_PATHS.contador, id)
 
 
