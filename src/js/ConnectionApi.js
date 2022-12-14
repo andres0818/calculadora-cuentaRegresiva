@@ -78,13 +78,13 @@ const httpDELETE = async (path, id) => {
 
 
 
-const getCalculadora = async () => await httpGET(API_PATHS.calculadora)
-const getCalContador = async () => await httpGET(API_PATHS.contador)
+ const getCalculadora = async () => await httpGET(API_PATHS.calculadora)
+ const getCalContador = async () => await httpGET(API_PATHS.contador)
 
-const createDataCalculadora = async (newDato) => await httpPOST(API_PATHS.calculadora, newDato)
-const createDataContador = async (newDato) => await httpPOST(API_PATHS.contador, newDato)
+ const createDataCalculadora = async (newDato) => await httpPOST(API_PATHS.calculadora, newDato)
+ const createDataContador = async (newDato) => await httpPOST(API_PATHS.contador, newDato)
 
-const eraseCalculadora = async (id) => await httpDELETE(API_PATHS.calculadora, id)
-const eraseContador = async (id) => await httpDELETE(API_PATHS.contador, id)
+ const eraseCalculadora = async (id) => await httpDELETE(API_PATHS.calculadora, id)
+ const eraseContador = async (id) => await httpDELETE(API_PATHS.contador, id)
 
 

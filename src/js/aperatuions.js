@@ -1,3 +1,4 @@
+export const operaciones=()=>{
 let operandoA = "0";
 let operandoB = "0";
 let operacion = "";
@@ -100,4 +101,5 @@ function resolver() {
 
   resetear();
   resultado.textContent = res;
+}
 }

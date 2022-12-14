@@ -4,17 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Spritn</title>
+    <link rel="stylesheet" href="src/styles/styleCalculator.css" />
   </head>
-  <body onload="init()">
-    <div class="container">
+  <body>
+    <div class="container" id="calculator">
       <div class="theme">
-        <input class="radio radio-purple" type="button" name="" id="purple" onclick="themePurple()" />
-        <input class="radio radio-black" type="button" name="" id="black" onclick="themeBlack()"/>
-        <input class="radio radio-white" type="button" name="" id="white" onclick="themeWhite()"/>
+        <input
+          class="radio radio-purple"
+          type="button"
+          name=""
+          id="purple"
+        />
+        <input
+          class="radio radio-black"
+          type="button"
+          name=""
+          id="black"
+        />
+        <input
+          class="radio radio-white"
+          type="button"
+          name=""
+          id="white"
+        />
       </div>
       <h1>Calculadora</h1>
+      <div id="historial"></div>
       <table class="teclas">
         <tr>
           <td class="resutl" colspan="4"><span id="resultado"></span></td>
@@ -53,7 +69,9 @@
         </tr>
       </table>
     </div>
-    <script src="theme.js"></script>
-    <script src="operaciones.js"></script>
+    <!-- <script src="src/js/aperatuions.js"></script>
+    <script src="src/js/themeCalculator.js"></script>
+    <script src="src/ConnectionApi.js"></script> -->
+    <script src="script.js" type="module"></script>
   </body>
 </html>
