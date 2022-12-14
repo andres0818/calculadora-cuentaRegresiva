@@ -155,7 +155,7 @@
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 844px){
     .contador-descuento{
-        width: 100%;
+        width: 130%;
         height:400px;       
         transform: rotate(0.5deg); 
         margin-top: 400px;        
@@ -196,4 +196,30 @@
         filter: blur(100px);
         position: relative;
     }
+    
   }
+
+  @media only screen and (min-device-width: 1024px){
+    #minutes::before{
+        content: "•" ;
+        color: transparent;
+        text-shadow: 60px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transform: translateX(-20px) translateY(-19px);
+        width: 70px;
+        height: 50px;
+        position: absolute;
+        background-color: gray;
+        z-index: -1;
+     }
+     #minutes::after{
+        position: absolute;
+         content: "MINUTOS";
+         color: transparent;
+         text-shadow: -40px 90px gray;
+         font-size: 16px;
+         font-family: Arial, Helvetica, sans-serif;    
+     }
+  }
+  

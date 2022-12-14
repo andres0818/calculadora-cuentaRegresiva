@@ -117,3 +117,14 @@ button:hover {
         text-shadow: 1100px 1150px white;    
   }
 }
+
+
+@media only screen and (min-device-width: 1024px){
+  body{
+    rotate: -0deg;
+  }
+.container{
+  margin-top: 110px;
+  width: 400px;
+}
+}
