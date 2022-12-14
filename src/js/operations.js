@@ -1,4 +1,4 @@
-
+import { createDataCalculadora } from "./ConnectionApi";
 
 export const operaciones=()=>{
 let operandoA = "0";
@@ -105,8 +105,6 @@ function resolver() {
   resultado.textContent = res;
   createDataCalculadora({id:res}) 
 
-  const historial=document.getElementById("score")
-  historial.innerHTML=res
 
 }
 

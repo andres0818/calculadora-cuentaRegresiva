@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spritn</title>
-    <link rel="stylesheet" href="src/styles/styleCalculator.css" />
-    <link rel="stylesheet" href="src/styles/styleContador.css">
-    <link rel="stylesheet" href="src/styles/contenedor.css">
-  </head>
-  <body>
-    <div class="contador-calculadora">
+
+
+export const createApp=()=>{
+    const element= document.createElement("div")
+    element.setAttribute("class","contador-calculadora")
+    element.innerHTML=`
       <div class="container" id="calculator">
         <div class="theme">
           <input class="radio radio-purple" type="button" name="" id="purple" />
@@ -65,13 +58,15 @@
         <span id="puntos">
           <span id="days"></span> : <span id="hours"></span> :
           <span id="minutes"></span> : <span id="seconds"></span
-        ></span>
+        ><br>        
+      </span>
       </div>
-    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="src/js/ConnectionApi.js"></script>
-    <!-- <script src="src/js/urlApi.js"  ></script> -->
     <script src="script.js" type="module"></script>
-  </body>
-</html>
+    `
+    document.body.appendChild(element)
+
+}
+
