@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@200;500&family=Rubik&display=swap');
+
+
+
+:root{
+    --Grayishblue: hsla(237, 18%, 59%, 0.612);
+    --Softred: hsl(345, 95%, 68%);
+    --Family: [Red Hat Text]("https://fonts.google.com/specimen/Red+Hat+Text");
+    --Weights: 700
+}
+
+
+#hours, #minutes,#seconds,#days{
+    background-color:var(--Grayishblue) ;
+    border-radius: 10px;
+    padding: 20px;
+   /*  box-shadow: 0 0 10px 1px purple; */
+    color: var(--Softred);
+    font-weight: var(--Weights);
+    font-family: "Overpass"
+}
+
+#hours::after{
+   position: absolute;
+    content: "HORAS";
+    color: transparent;
+    text-shadow: -45px 90px gray;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+#days::after{
+    position: absolute;
+     content: "DAYS";
+     color: transparent;
+     text-shadow: -35px 90px gray;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;    
+ }
+ #minutes::after{
+    position: absolute;
+     content: "MINUTOS";
+     color: transparent;
+     text-shadow: -70px 90px gray;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;    
+ }
+ #seconds::after{
+    position: absolute;
+     content: "SEGUNDOS";
+     color: transparent;
+     text-shadow: -75px 90px gray;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;    
+ }
+
+#days::before{
+    content: "•" ;
+    color: transparent;
+    text-shadow: 50px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-20px) translateY(-19px);
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    z-index: -1;
+ }
+ #hours::before{
+    content: "•" ;
+    color: transparent;
+    text-shadow: 60px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-20px) translateY(-19px);
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    z-index: -1;
+ }
+ #minutes::before{
+    content: "•" ;
+    color: transparent;
+    text-shadow: 90px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-20px) translateY(-19px);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    z-index: -1;
+ }
+ #seconds::before{
+    content: "•" ;
+    color: transparent;
+    text-shadow: 85px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-20px) translateY(-19px);
+    width:100px ;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    z-index: -1;
+ }
+#puntos{
+    transform: rotate(25deg) translateY(-300px)translatex(280px); 
+    
+}
+
+.contador-descuento{
+    width: 120%;
+    height:110vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(12, 2, 33);
+    background-image: url(../img/bg-stars.svg);
+    font-size: 50px;
+    transform: translateY(378.5px)translateX(-160px); 
+    
+}
+.contador-descuento::before{
+    content: "/";
+    color: transparent;
+    position: absolute;
+    rotate: 25deg;
+    background-image: url(../img/pattern-hills.svg);
+    width: 1900px;
+    z-index: 3;
+}
+
+.contador-descuento::after{
+    content: "Cuenta Regresiva";
+    text-align: 0 50px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(12, 2, 33);
+    display: flex;
+    font-size: 60px;
+    z-index: 2;
+    transform:  translateX(-150px) rotate(25deg);
+    transition: 0.3s  linear;
+    width: 500px;
+    height: 500px;
+}
+.contador-descuento:hover::after{
+    z-index: -1;
+    filter: blur(100px);
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px){
+    .contador-descuento{
+        width: 130%;
+        height:400px;       
+        transform: rotate(0.5deg); 
+        margin-top: 400px;        
+        margin-left: -2px;
+    }
+    #puntos{
+        transform: rotate(0) translateY(-50px)translatex(120px);
+        display: flex; 
+        
+    }
+    .contador-descuento::before{
+        content: "/";
+        color: transparent;
+        position: absolute;
+        rotate: 0deg;
+        margin-top: 350px;
+        background-image: url(../img/pattern-hills.svg);
+        width: 900px;
+        z-index: 3;
+    }
+    .contador-descuento::after{
+        content: "Cuenta Regresiva";
+        text-align: 0 50px;
+        color: white;
+        border-radius: 50px;
+        background-color: rgb(12, 2, 33);
+        display: flex;
+        font-size: 60px;
+        z-index: 2;
+        transform:  translateX(50px) rotate(0deg);
+        transition: 0.3s  linear;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+    }
+    .contador-descuento:hover::after{
+        z-index: -1;
+        filter: blur(100px);
+        position: relative;
+    }
+    
+  }
+
+  @media only screen and (min-device-width: 1024px){
+    #minutes::before{
+        content: "•" ;
+        color: transparent;
+        text-shadow: 60px 25px rgb(12, 2, 33),-10px 25px rgb(12, 2, 33);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transform: translateX(-20px) translateY(-19px);
+        width: 70px;
+        height: 50px;
+        position: absolute;
+        background-color: gray;
+        z-index: -1;
+     }
+     #minutes::after{
+        position: absolute;
+         content: "MINUTOS";
+         color: transparent;
+         text-shadow: -40px 90px gray;
+         font-size: 16px;
+         font-family: Arial, Helvetica, sans-serif;    
+     }
+  }
+  

@@ -1,0 +1,130 @@
+body {
+  background-color: rgba(137, 43, 226, 0.726);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 50%;
+  color: white;
+  margin: 0 40% 0 30%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.423);
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: rotate(25.75deg) translateX(-250px) translateY(-50px); 
+  position: relative;
+  z-index:-2;  
+}
+
+.container::after{
+  content: "Calculadora";
+  color: transparent;
+  font-size: 60px;
+  text-shadow: 1200px 1150px white;
+  display: flex;
+  position: absolute;
+  width: 2500px;
+  height: 2500px;
+  position: absolute;
+  background-color: rgb(174, 111, 232);
+  transition:0.2s linear ;
+}
+.container:hover::after{
+  z-index: -1;
+  filter: blur(100px);
+  background-color: transparent;
+}
+
+.theme {
+  background-color: rgba(0, 0, 0, 0.127);
+  border-radius: 8px;
+  display: flex;
+  margin: 8px 0 -25px 70%;
+}
+
+.inputs{
+  display: flex;
+  gap: 30px;  
+}
+#historial{
+  width: 150px;
+  height: 250px;
+  background-color: rgba(61, 42, 79, 0.318);
+  border-radius: 10px;
+  text-align: center;
+}
+.delete{
+  margin-left: 10px;
+  height: 30px;
+  width: 80px;
+  background-color: rgb(197, 59, 59);
+}
+.radio {
+  margin: 3px;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(128, 128, 128, 0.364);
+  transition:  0.2s all linear;
+} 
+.radio:focus{
+    background-color: orange;
+}
+
+.resutl {
+  
+  padding-right: 20px;
+  text-align: end;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgba(61, 42, 79, 0.318);
+}
+
+.numeros {
+  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+button {
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.341);
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgba(186, 184, 188, 0.341);
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px){
+  body{
+    rotate: 25deg;
+  }
+  .container{
+    width: 95%;
+    margin: 5px 0px 5px -35px;
+    transform:rotate(0deg) translateX(50px);
+  }
+  .container::after{
+        text-shadow: 1100px 1150px white;    
+  }
+}
+
+
+@media only screen and (min-device-width: 1024px){
+  body{
+    rotate: -0deg;
+  }
+.container{
+  margin-top: 110px;
+  width: 400px;
+}
+}
