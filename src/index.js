@@ -4,16 +4,16 @@ import { themePurple } from "./js/themeCalculator";
 import { operaciones } from "./js/operations";
 import { mostrarHistorial } from "./js/urlApi";
 import { reloj } from "./js/reloj";
-import "./styles/contenedor.css"
-import "./styles/styleCalculator.css"
-import "./styles/styleContador.css" 
+import "./styles/contenedor.scss"
+import "./styles/styleCalculator.scss"
+import "./styles/styleContador.scss" 
 import { createApp } from "./js/index.js";
 
 
 
 createApp()
 
-reloj("12/16/2022")
+reloj("12/31/2022")
 
 mostrarHistorial()
 operaciones()
