@@ -146,6 +146,7 @@
   width: 600px;
   height: 500px;
 }
+
 .contador-descuento:hover::after {
   z-index: -1;
   filter: blur(100px);
