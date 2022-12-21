@@ -7,7 +7,7 @@ import { reloj } from "./js/reloj";
 import "./styles/contenedor.scss"
 import "./styles/styleCalculator.scss"
 import "./styles/styleContador.scss" 
-import { createApp } from "./js/index.js";
+import {createApp} from "./js/createApp"
 
 
 
